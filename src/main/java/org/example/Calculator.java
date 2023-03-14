@@ -50,7 +50,9 @@ public class Calculator {
     public double fact(double num) {
         double facto = 1;
         for(int i = 1; i <= num; ++i)
-        { facto *= i;   }
+        {
+            facto *= i;
+        }
         return  facto;
     }
 }
