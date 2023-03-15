@@ -53,4 +53,22 @@ public class Testcases {
         assertNotEquals("Finding natural log for False Positive", 60, calculator.naturalLog(2.4), DELTA);
         assertNotEquals("Finding natural log for False Positive", 4.7, calculator.naturalLog(2.1), DELTA);
     }
+
+    @Test
+    public void squareRootTruePositive(){
+        assertEquals("Finding square root for True Positive", 4, calculator.squareRoot(16), DELTA);
+        assertEquals("Finding square root for True Positive", 1, calculator.squareRoot(1), DELTA);
+        assertEquals("Finding square root for True Positive", 9, calculator.squareRoot(81), DELTA);
+        assertEquals("Finding square root for True Positive", 6, calculator.squareRoot(36), DELTA);
+    }
+
+    @Test
+    public void squareRootFalsePositive(){
+        assertNotEquals("Finding square root for False Positive", 1, calculator.squareRoot(3), DELTA);
+        assertNotEquals("Finding square root for False Positive", 3, calculator.squareRoot(4), DELTA);
+        assertNotEquals("Finding square root for False Positive", 4, calculator.squareRoot(81), DELTA);
+        assertNotEquals("Finding square root for False Positive", 2, calculator.squareRoot(36), DELTA);
+
+    }
+
 }
