@@ -41,4 +41,16 @@ public class Testcases {
         assertNotEquals("Finding power for False Positive", 99, calculator.power(4, 3), DELTA);
         assertNotEquals("Finding power for False Positive", -12, calculator.power(5, 3), DELTA);
     }
+
+    @Test
+    public void logTruePositive(){
+        assertEquals("Finding natural log for True Positive", 0, calculator.naturalLog(1), DELTA);
+
+    }
+
+    @Test
+    public void logFalsePositive(){
+        assertNotEquals("Finding natural log for False Positive", 60, calculator.naturalLog(2.4), DELTA);
+        assertNotEquals("Finding natural log for False Positive", 4.7, calculator.naturalLog(2.1), DELTA);
+    }
 }
