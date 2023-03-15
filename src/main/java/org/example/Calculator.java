@@ -30,6 +30,10 @@ public class Calculator {
 
                     break;
                 case 2:
+                    System.out.print("Enter a number : ");
+                    number1 = scanner.nextDouble();
+                    System.out.println("Square root of "+number1+" is : " + calculator.squareRoot(number1));
+                    System.out.println("\n");
                     break;
                 case 3:
                     break;
@@ -54,5 +58,9 @@ public class Calculator {
             facto *= i;
         }
         return  facto;
+    }
+    public double squareRoot(double number1) {
+        double result = Math.sqrt(number1);
+        return result;
     }
 }
