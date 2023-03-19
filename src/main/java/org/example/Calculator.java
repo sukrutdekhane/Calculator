@@ -3,7 +3,10 @@ package org.example;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
@@ -57,7 +60,10 @@ public class Calculator {
     }
 
     public double factorial(double number1){
+        logger.info("[FACTORIAL] - " + number1);
         double result = fact(number1);
+
+        logger.info("[RESULT - FACTORIAL] - " + result);
         return result;
     }
 
@@ -74,6 +80,7 @@ public class Calculator {
         return result;
     }
     public double power(double number1, double number2) {
+
         double result = Math.pow(number1,number2);
         return result;
     }
