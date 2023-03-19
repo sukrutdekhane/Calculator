@@ -76,15 +76,19 @@ public class Calculator {
         return  facto;
     }
     public double squareRoot(double number1) {
+        logger.info("[SQ ROOT] - " + number1);
         double result = Math.sqrt(number1);
+        logger.info("[RESULT - SQ ROOT] - " + result);
         return result;
     }
     public double power(double number1, double number2) {
-
+        logger.info("[POWER - " + number1 + " RAISED TO] " + number2);
         double result = Math.pow(number1,number2);
+        logger.info("[RESULT - POWER] - " + result);
         return result;
     }
     public double naturalLog(double number1) {
+        logger.info("[NATURAL LOG] - " + number1);
         double result = 0;
         try {
 
@@ -98,6 +102,7 @@ public class Calculator {
         } catch (ArithmeticException error) {
             System.out.println("[EXCEPTION - LOG] - Cannot find log of negative numbers " + error.getLocalizedMessage());
         }
+        logger.info("[RESULT - NATURAL LOG] - " + result);
         return result;
     }
 }
