@@ -1,2 +1,2 @@
 # Calculator
-This is a mini project of SPE
+This is a mini project of SPE.
