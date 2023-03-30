@@ -30,6 +30,7 @@ public class Calculator {
                     number1 = scanner.nextDouble();
                     if(number1<0)
                         System.out.println("Factorial cannot be calculated!");
+                    else
                     System.out.println("Factorial of "+number1+" is : " + calculator.factorial(number1));
                     System.out.println("\n");
 
@@ -39,6 +40,7 @@ public class Calculator {
                     number1 = scanner.nextDouble();
                     if(number1<0)
                         System.out.println("Square root cannot be calculated!");
+                    else
                     System.out.println("Square root of "+number1+" is : " + calculator.squareRoot(number1));
                     System.out.println("\n");
                     break;
@@ -55,6 +57,7 @@ public class Calculator {
                     number1 = scanner.nextDouble();
                     if(number1<=0)
                         System.out.println("Natural log cannot be calculated!");
+                    else
                     System.out.println("Natural log of "+number1+" is : " + calculator.naturalLog(number1));
                     System.out.println("\n");
                     break;
