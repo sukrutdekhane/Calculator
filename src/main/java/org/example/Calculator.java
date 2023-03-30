@@ -28,6 +28,8 @@ public class Calculator {
                     // Factorial
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
+                    if(number1<0)
+                        System.out.println("Factorial cannot be calculated!");
                     System.out.println("Factorial of "+number1+" is : " + calculator.factorial(number1));
                     System.out.println("\n");
 
@@ -35,6 +37,8 @@ public class Calculator {
                 case 2:
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
+                    if(number1<0)
+                        System.out.println("Square root cannot be calculated!");
                     System.out.println("Square root of "+number1+" is : " + calculator.squareRoot(number1));
                     System.out.println("\n");
                     break;
@@ -49,6 +53,8 @@ public class Calculator {
                 case 4:
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
+                    if(number1<=0)
+                        System.out.println("Natural log cannot be calculated!");
                     System.out.println("Natural log of "+number1+" is : " + calculator.naturalLog(number1));
                     System.out.println("\n");
                     break;
@@ -68,6 +74,7 @@ public class Calculator {
     }
 
     public double fact(double num) {
+
         double facto = 1;
         for(int i = 1; i <= num; ++i)
         {
