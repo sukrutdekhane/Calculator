@@ -15,4 +15,4 @@
         name: sukrutdekhane/speminiproject
         source: pull
     - name: Create image
-      shell: docker run -it --name mycontainer sukrutdekhane/speminiproject
+      shell: docker create -it --name mycontainer sukrutdekhane/speminiproject
